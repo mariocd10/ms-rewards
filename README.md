@@ -1,5 +1,5 @@
 # ms-rewards
-Opens Edge browser and navigates through the news reel and does searches based on random strings.
+Open up Edge Browser and navigate through the news carousel from your Microsoft account.
 
 ##Requirements
 * Install Windows 10
