@@ -32,8 +32,7 @@ public class SearchRewardsTest {
 			ResultsPage rp = new ResultsPage(driver);
 			List<WebElement> row;
 			for (int i = 2; i < count; i++) {
-				// because the page refreshes every click, the elments need to get fetched each
-				// time
+				// because the page refreshes every click, the elments need to get fetched each time
 				System.out.println("Search");
 				row = rp.articleRow();
 				if (row == null) {
@@ -64,8 +63,6 @@ public class SearchRewardsTest {
 	@BeforeMethod
 	public void beforeMethod() throws InterruptedException {
 		final String Edge_property = "webdriver.edge.driver";
-		// final String ie_driver_path =
-		// "C:\\Users\\mario\\Documents\\WebDrivers\\IEDriverServer.exe"; //reference ie
 		// driver web agent 
 		final String edge_driver_path = "C:\\Users\\mario\\Documents\\WebDrivers\\MicrosoftWebDriver.exe"; // reference edge driver web agent
 		System.setProperty(Edge_property, edge_driver_path); // set the system path to point to the ie driver
